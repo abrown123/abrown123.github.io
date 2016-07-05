@@ -137,11 +137,14 @@
                             <div class="item">
                                 <h3 class="title"><a href="#">A Little Bit About The Graph</a></h3>
                                 <p class="summary">This graph represents the grades I earned my tenth grade year.I have maintained an eighty-three or above during this school term and have proved that I can and will be successful in everything I do.</p>
-                       <div id="chartcontainer"><script type="text/javascript">
-				var myChart = new JSChart('chartcontainer', 'bar');
-				myChart.setDataXML('data.xml');
-				myChart.draw();
-		       </script></div>
+  <div id="chartcontainer">
+                       <script type="text/javascript">
+			var myData = new Array([10, 20], [15, 10], [20, 30], [25, 10], [30, 5]);
+			var myChart = new JSChart('chartcontainer', 'line');
+			myChart.setDataArray(myData);
+			myChart.draw();
+		       </script>
+		       </div>
                             </div><!--//item-->
                             <div class="item">
                                 <h3 class="title"><a href="#">Project Title Cras eget lacus</a> </h3>
@@ -286,7 +289,7 @@
                                     <span class="level">Native Speaker <br class="visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </span>
                                 </li><!--//item-->
                                 <li class="item">
-                                    <span class="title"><strong>Spanish:</strong></span>
+                                    <span class="title"><moderate>Spanish:</moderate></span>
                                     <span class="level">Professional Proficiency <br class="visible-sm visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i></span>
                                 </li><!--//item-->
                             </ul>
